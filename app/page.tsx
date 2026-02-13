@@ -9,7 +9,7 @@ export default function Home() {
       <Header />
       {/* Banner will go here */}
       <Banner 
-        title="Welcome to My Website"
+        title="Welcome to My Websiteeeeeee"
         subtitle="Enter the Web Experience"
       />
       <main className="min-h-screen p-10">
