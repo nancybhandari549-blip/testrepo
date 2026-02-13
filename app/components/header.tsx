@@ -3,40 +3,41 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <header
-      style={{
-        padding: "30px",
-       
-        backgroundColor: "transparent",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-        }}
-      >
+    <header className="fixed top-0 left-0 w-full h-20 flex items-center px-8 bg-transparent z-50">
+      
+      <div className="flex items-center justify-between w-full">
+        
         {/* Logo */}
-        <div style={{ display: "flex", alignItems: "center" }}>
+        <div className="flex items-center">
           <Image
-            src="/photos/img.png"   // IMPORTANT: from /public/photos/img.png
-            width={100}
-            height={20}
+            src="/photos/img.png"
+            width={120}
+            height={40}
             alt="Logo"
           />
         </div>
 
         {/* Menu */}
-        <nav style={{ display: "flex", gap: "50px" }}>
-          <Link  href="/">Home</Link>
-          <Link  href="/about">About</Link>
-          <Link  href="/services">Services</Link>
-          <Link  href="/contact">Contact</Link>
+        <nav className="flex gap-10 text-white font-medium">
+          <Link href="/" className="hover:text-[#00e5ff] transition">
+            Home
+          </Link>
+          <Link href="/about" className="hover:text-[#00e5ff] transition">
+            About
+          </Link>
+          <Link href="/services" className="hover:text-[#00e5ff] transition">
+            Services
+          </Link>
+          <Link href="/contact" className="hover:text-[#00e5ff] transition">
+            Contact
+          </Link>
         </nav>
 
         {/* Contact Button */}
-        <button>Contact Us</button>
+        <button className="px-5 py-2 border border-[#00e5ff] text-[#00e5ff] rounded-md hover:bg-[#00e5ff] hover:text-black transition">
+          Contact Us
+        </button>
+
       </div>
     </header>
   );
