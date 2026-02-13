@@ -6,7 +6,7 @@ const Header = () => {
     <header
       style={{
         padding: "30px",
-        borderBottom: "1px solid #00e5ff",
+       
         backgroundColor: "transparent",
       }}
     >
